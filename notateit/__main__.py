@@ -224,7 +224,7 @@ def main():
     sys.exit(app.exec())
 
 """
-python3 -m nuitka --standalone --onefile --enable-plugin=pyside6 --output-dir=build --include-data-file=notateit_viewer/icon.png=icon.png main.py
+python3 -m nuitka --standalone --onefile --enable-plugin=pyside6 --output-dir=build --include-data-file=notateit/icon.png=icon.png main.py
 """
 if __name__ == '__main__':
     main()

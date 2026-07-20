@@ -1,23 +1,38 @@
 [project]
-name = "notateit-viewer"
-version = "1.0.2"
+name = "notateit"
+version = "1.0.3"
 description = "Notateit Viewer Remake"
 authors = [
     { name = "Nikita Denissov", email = "n.denissov@proton.me" }
 ]
 readme = "README.md"
 requires-python = ">=3.13,<3.14"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.13",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Topic :: Multimedia :: Graphics :: Viewers",
+]
 dependencies = [
     "pillow (>=12.1.1,<13.0.0)",
     "pyside6 (>=6.10.0,<7.0.0)"
 ]
 
+[project.urls]
+Homepage = "https://github.com/ndenissov/notateit"
+Repository = "https://github.com/ndenissov/notateit"
+
 [project.scripts]
-notateit-viewer = "notateit_viewer.__main__:main"
+notateit = "notateit.__main__:main"
 
 [build-system]
 requires = ["poetry-core>=2.0.0,<3.0.0"]
 build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+packages = [{ include = "notateit" }]
+include = ["notateit/notateit_remake.png"]
 
 [dependency-groups]
 dev = [
