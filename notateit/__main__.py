@@ -1,3 +1,5 @@
+from __future__ import annotations
+
 __author__ = 'Nikita Denissov'
 
 import sys
@@ -222,6 +224,7 @@ def main():
     if input_path is not None:
         window.open_file(file_path_str=input_path)
     sys.exit(app.exec())
+
 
 """
 python3 -m nuitka --standalone --onefile --enable-plugin=pyside6 --output-dir=build --include-data-file=notateit/icon.png=icon.png main.py

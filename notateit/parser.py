@@ -1,3 +1,5 @@
+from __future__ import annotations
+
 __author__ = 'Nikita Denissov'
 
 import re
@@ -86,7 +88,7 @@ def parse_document(data: bytes, assets_dir: Path) -> dict[str, Any]:
     return doc_structure
 
 
-def process_nat_file(input_file: Path, assets_dir: Path = None) -> tuple[dict[str, Any], Path]:
+def process_nat_file(input_file: Path, assets_dir: Path | None = None) -> tuple[dict[str, Any], Path]:
     base_name = input_file.with_suffix('')
     if not assets_dir:
         assets_dir = base_name.with_suffix('')

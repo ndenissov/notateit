@@ -1,12 +1,12 @@
 [project]
 name = "notateit"
-version = "1.0.3"
+version = "1.0.4"
 description = "Notateit Viewer Remake"
 authors = [
     { name = "Nikita Denissov", email = "n.denissov@proton.me" }
 ]
 readme = "README.md"
-requires-python = ">=3.13,<3.14"
+requires-python = ">=3.8,<3.15"
 classifiers = [
     "Programming Language :: Python :: 3",
     "Programming Language :: Python :: 3.13",
@@ -14,9 +14,15 @@ classifiers = [
     "Operating System :: OS Independent",
     "Topic :: Multimedia :: Graphics :: Viewers",
 ]
-dependencies = [
-    "pillow (>=12.1.1,<13.0.0)",
-    "pyside6 (>=6.10.0,<7.0.0)"
+[tool.poetry.dependencies]
+
+pyside6 = [
+    { version = ">=6.6.3,<7.0.0", python = ">=3.8,<3.10" },
+    { version = ">=6.11.1,<7.0.0", python = ">=3.10" }
+]
+pillow = [
+    { version = ">=10.4.0,<13.0.0", python = ">=3.8,<3.10" },
+    { version = ">=12.3.0,<13.0.0", python = ">=3.10" }
 ]
 
 [project.urls]
@@ -33,9 +39,3 @@ build-backend = "poetry.core.masonry.api"
 [tool.poetry]
 packages = [{ include = "notateit" }]
 include = ["notateit/notateit_remake.png"]
-
-[dependency-groups]
-dev = [
-    "nuitka (>=4.0,<5.0)",
-    "zstandard (>=0.25.0,<0.26.0)"
-]
