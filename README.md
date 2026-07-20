@@ -1,16 +1,31 @@
+# Notateit Viewer Remake
+
+A viewer for `.nat` files.
+
+## Installation
+
+### From PyPI (Python package)
+
+You can install the viewer directly via `pip`:
+
 ```bash
-NotateitViewerRemake.exe --help
-
-
-usage: NotateitViewerRemake.exe [-h] [-x] [-o OUTPUT] [-m] [input]
-
-positional arguments:
-  input                Input .nat file path
-
-options:
-  -h, --help           show this help message and exit
-  -x, --extract        Extract .nat file
-  -o, --output OUTPUT  Output assets and final .json file directory
-  -m, --minimize       Minimize the final .json file
+pip install notateit
 ```
-![App Icon](notateit_viewer/notateit_remake.png)
+
+### Pre-compiled Binaries
+
+If you do not have Python installed, you can use pre-compiled standalone versions from
+the [GitHub Releases](https://github.com/ndenissov/notateit/releases):
+
+* **Windows (.exe):**
+  [NotateitViewerRemake.exe](https://github.com/ndenissov/notateit/releases/download/v1.0.0/NotateitViewerRemake.exe)
+* **Linux (AppImage):**
+  [NotateIt_Viewer_Remake-x86_64.AppImage](https://github.com/ndenissov/notateit/releases/download/v1.0.1/NotateIt_Viewer_Remake-x86_64.AppImage)
+
+## Usage
+
+After installation, you can run the app using the command:
+
+```bash
+notateit --help
+```
