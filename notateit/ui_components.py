@@ -1,5 +1,3 @@
-from __future__ import annotations
-
 __author__ = 'Nikita Denissov'
 
 import os

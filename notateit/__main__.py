@@ -1,5 +1,3 @@
-from __future__ import annotations
-
 __author__ = 'Nikita Denissov'
 
 import sys
@@ -226,8 +224,5 @@ def main():
     sys.exit(app.exec())
 
 
-"""
-python3 -m nuitka --standalone --onefile --enable-plugin=pyside6 --output-dir=build --include-data-file=notateit/icon.png=icon.png main.py
-"""
 if __name__ == '__main__':
     main()
