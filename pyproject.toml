@@ -1,29 +1,27 @@
 [project]
 name = "notateit"
-version = "1.0.4"
+version = "2.0.0"
 description = "Notateit Viewer Remake"
 authors = [
     { name = "Nikita Denissov", email = "n.denissov@proton.me" }
 ]
 readme = "README.md"
-requires-python = ">=3.8,<3.15"
+requires-python = ">=3.10,<3.15"
 classifiers = [
     "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
     "Programming Language :: Python :: 3.13",
+    "Programming Language :: Python :: 3.14",
     "License :: OSI Approved :: MIT License",
     "Operating System :: OS Independent",
     "Topic :: Multimedia :: Graphics :: Viewers",
 ]
-[tool.poetry.dependencies]
 
-pyside6 = [
-    { version = ">=6.6.3,<7.0.0", python = ">=3.8,<3.10" },
-    { version = ">=6.11.1,<7.0.0", python = ">=3.10" }
-]
-pillow = [
-    { version = ">=10.4.0,<13.0.0", python = ">=3.8,<3.10" },
-    { version = ">=12.3.0,<13.0.0", python = ">=3.10" }
-]
+[tool.poetry.dependencies]
+pyside6 = "^6.11.1"
+pillow = "^12.3.0" # NOT COMPATIBLE WITH PYTHON <3.10: Secure Pillow versions drops python <3.10 support.
 
 [project.urls]
 Homepage = "https://github.com/ndenissov/notateit"
