@@ -1,4 +1,8 @@
 # Notateit Viewer Remake
+[![PyPI version](https://img.shields.io/pypi/v/notateit.svg)](https://pypi.org/project/notateit/)
+[![PyPI Downloads](https://static.pepy.tech/badge/notateit)](https://pepy.tech/project/notateit)
+[![Python versions](https://img.shields.io/pypi/pyversions/notateit.svg)](https://pypi.org/project/notateit/)
+[![License](https://img.shields.io/pypi/l/notateit.svg)](https://github.com/ndenissov/notateit/blob/main/LICENSE)
 
 A viewer for `.nat` files.
 
