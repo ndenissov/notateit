@@ -1,6 +1,6 @@
 [project]
 name = "notateit"
-version = "2.0.1"
+version = "2.0.2"
 description = "Notateit Viewer Remake"
 authors = [
     { name = "Nikita Denissov", email = "n.denissov@proton.me" }
